@@ -3,6 +3,9 @@
 Enables using the Google OAuth2 API for sending email in ProcessWire. Once
 installed and configured, any email sent by ProcessWire is sent by Gmail. 
 
+You can also read this documentation online in this 
+[blog post about WireMailGmail](https://processwire.com/blog/posts/wiremail-modules-and-gmail/#wiremail-gmail). 
+
 ## Overview
 
 ### Benefits
@@ -41,6 +44,17 @@ messages. I don't know what Gmail's policies are regarding this, but I'm guessin
 they don't want you doing this. I personally think of Gmail as an excellent and 
 reliable solution primarily for for transactional email, but maybe also for small 
 scale newsletters (though I've not personally used it for that purpose). 
+
+### Alternatives
+
+One potentially simpler alternative is that you can connect your ProcessWire 
+installation with Gmail using SMTP. Though it does require you “allow insecure 
+apps” access on the Google account. For instructions, see this blog post section on 
+[Using Gmail as an SMTP server](https://processwire.com/blog/posts/wiremail-modules-and-gmail/#using-gmail-as-an-smtp-server)
+which discusses setup with both the WireMailSmtp and WireMailPHPMailer modules. 
+Because this is a less secure way of connecting your account with Gmail, you 
+probably want to limit this kind of setup to a Google account that you use only
+for this particular purpose. 
 
 ## Installation
 
